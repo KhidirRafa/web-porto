@@ -237,3 +237,34 @@ nav {
     width: 50px;
   }
 }
+
+.kontak {
+  background-color: rgb(17, 73, 177);
+  padding-bottom: 5rem;
+}
+
+.kontak h2 {
+  text-align: center;
+}
+
+.kontak a {
+  display: flex;
+  justify-content: center;
+  color:white;
+  text-decoration: none;
+  border-radius: 9999px;
+  border: 2px solid white;
+  width: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s;
+}
+
+.kontak a:hover {
+  background-color: rgb(19, 6, 65);
+  transform: scale(1.15);
+
+}
+
+
+
