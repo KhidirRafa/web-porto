@@ -11,7 +11,7 @@ body {
   font-weight: 400;
   font-style: normal;
   color: rgb(255, 255, 255);
-  background-color: rgb(19, 6, 65);
+  background-color: rgb(71, 135, 254);
 }
 
 /* navbar style */
@@ -21,6 +21,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 5px 13px black;
 }
 
 /* css menu */
@@ -41,23 +42,41 @@ nav {
 /* hero style */
 #hero {
   display: flex;
-  padding: 5rem;
-  margin-top: 20px;
+  margin: 60px;
+  margin-top: 50px;
 }
 
 .kiri {
-  width: 60%;
+  width: fit-content;
+  background-color: rgb(17, 73, 177);
+  border-radius: 20px;
+  padding: 20px;
+  margin-right: 35px;
+  box-shadow: 0 8px 13px black;
+
 }
 
 .kanan {
-  width: 40%;
+  width: fit-content;
   display: flex;
   justify-content: end;
+  background-color: rgb(17, 73, 177);
+  margin-left: 25px;
+  padding: 40px;
+  border-radius: 0 4rem;
+  transition: all 0.3s;
+   box-shadow: 0 8px 13px black;
+}
+
+.kanan:hover{
+transform: scale(1.03) translateY(-8px)
 }
 
 .kanan img {
-  width: 300px;
+  width: 200px;
   border-radius: 0 2rem;
+  transition: all 0.3s;
+  
 }
 
 .button {
@@ -66,28 +85,37 @@ nav {
 }
 
 .button a {
-  border: 2px solid;
   text-decoration: none;
   border-radius: 30px;
-  padding: 8px;
+  padding: 12px;
+  padding-right: 30px;
+  padding-left: 30px;
   margin-right: 4rem;
-  color: rgb(255, 255, 255);
-  transition: background-color 0.8s ease;
-  transition:
-    font-size 0.4s ease,
-    background-color 0.4s ease;
+  background-color: rgb(10, 40, 97);
+  transition: all 0.3s ;
+  color: white;
+  box-shadow: 0 6px 6px black;
 }
 
 .button a:hover {
   background-color: rgb(56, 126, 217);
-  font-size: 20px;
+  transform: scale(1.15);
 }
 
 /* skill section */
 
 #skill {
-  padding: 70px;
+  padding: 30px;
+  margin: 60px;
+  border-radius: 20px;
   background-color:rgb(17, 73, 177) ;
+  box-shadow: 0 8px 10px black;
+  transition: all 0.3s ;
+
+}
+
+#skill:hover {
+  transform: scale(1.02) translateY(-6px);
 }
 
 .item img {
@@ -112,9 +140,9 @@ nav {
   padding: 10px 20px;
   margin: 20px;
   text-transform: uppercase;
+  background-color: rgb(10, 40, 97);
   
 }
-
 
 #skill h2 {
   text-align: center;
@@ -127,7 +155,12 @@ nav {
 }
 
 #testimoni {
-  padding: 5rem;
+  padding: 30px;
+  background-color: rgb(17, 73, 177);
+  margin: 60px;
+  border-radius: 20px;
+  box-shadow: 0 8px 10px black;
+
 }
 
 #testimoni h2 {
@@ -154,14 +187,15 @@ nav {
 
 .testimoni-card {
   text-align: center;
-  background-color:rgb(17, 73, 177) ;
+  background-color:rgb(10, 40, 97) ;
   padding: 2rem;
   width: 250px;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgb(0, 0, 0) ;
   display: flex;
   flex-direction: column;
-  transition: 0.5s;
+  transition: 0.3s;
+  margin: 15px;
 }
 
 .testimoni-card:hover {
@@ -174,6 +208,11 @@ nav {
   justify-content: center;
   gap: 10px;
 
+}
+
+.testimoni-card .bintang {
+  display: flex;
+  justify-content: center
 }
 
 /* style di tampilan device lain */
@@ -237,46 +276,139 @@ nav {
     width: 50px;
   }
 }
-
-/* kotak / footer */
+/* kontak/footer */
 .kontak {
   background-color: rgb(17, 73, 177);
-  padding-bottom: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin: 15px 60px ;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 8px 10px black;
+
 }
 
-.kontak h2 {
-  text-align: center;
+.judul-kontak {
+  background-color: rgb(71, 135, 254);
+  width:fit-content;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 400px;
+  padding-right: 400px;
+  border-radius: 999px;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0 5px 13px rgba(0, 0, 0, 0.728);
+}
+
+.bungkus-konten {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .kontak a {
-  display: flex;
-  justify-content: center;
   color:white;
   text-decoration: none;
   border-radius: 9999px;
-  border: 2px solid white;
   width: 7rem;
-  margin-left: auto;
-  margin-right: auto;
   transition: all 0.3s;
-  margin-bottom: 10px;
+  width: fit-content;
   padding: 10px;
-  padding-right: 30px;
+  background-color: rgb(10, 40, 97);
+  margin: 10px;
+  box-shadow: 0 5px 13px rgba(0, 0, 0, 0.728);
 }
 
 .kontak a:hover {
-  background-color: rgb(19, 6, 65);
-  transform: scale(1.15);
+  transform: scale(1.05);
+  background-color: rgb(71, 135, 254);
+  box-shadow: 0 0px 13px rgb(71, 135, 254);
+}
+
+.box-kontak {
+  background-color: rgb(10, 40, 97);
+  width: 90%;
+  margin: 20px;
+  margin-top: 1rem;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.box-kontak h2 {
+text-align: center;
+}
+
+.box-kontak a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box-kontak p {
+  color: rgb(189, 188, 188);
+}
+
+.box-kontak input, textarea{
+  background-color: rgba(3, 3, 3, 0.361);
+  border: 2px solid rgba(56, 126, 217, 0.4);
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  color: white;
+
 
 }
 
-.kontak iframe {
-
+input[type="nama"]:focus, 
+input[type="email"]:focus,
+select:focus {
+    border: 2px solid rgb(56, 126, 217);
+    outline: none;
+    box-shadow: 0 0px 15px rgba(56, 126, 217, 0.763) ;
+    transform: scale(1.02);
 }
+
+textarea:focus {
+    border: 2px solid rgb(56, 126, 217);
+    outline: none;
+    box-shadow: 0 0px 15px rgba(56, 126, 217, 0.763) ;
+    transform: scale(1.02);
+}
+
+textarea {
+  resize: none;
+  font-family: sans-serif;
+}
+
+button {
+  background-color: rgb(17, 73, 177);
+  margin-top: 20px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 141241px;
+  box-shadow: 0 5px 13px rgba(0, 0, 0, 0.728);
+  transition: all 0.3s;
+  font-family: "Roboto Slab", sans-serif;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: rgb(71, 135, 254);
+  box-shadow: 0 0px 13px rgb(71, 135, 254);
+}
+
+
+
+
 
 
 
