@@ -11,7 +11,7 @@ body {
   font-weight: 400;
   font-style: normal;
   color: rgb(255, 255, 255);
-  background-color: rgb(71, 135, 254);
+  background-color: rgb(10, 40, 97);
 }
 
 /* navbar style */
@@ -277,17 +277,13 @@ transform: scale(1.03) translateY(-8px)
   }
 }
 /* kontak/footer */
-.kontak {
-  background-color: rgb(17, 73, 177);
-  margin: 15px 60px ;
-  border-radius: 20px;
-  padding: 10px;
-  box-shadow: 0 8px 10px black;
+#kontak {
+
 
 }
 
 .judul-kontak {
-  background-color: rgb(71, 135, 254);
+  background-color: rgb(17, 73, 177);
   width:fit-content;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -327,15 +323,16 @@ transform: scale(1.03) translateY(-8px)
 .box-kontak {
   background-color: rgb(10, 40, 97);
   width: 90%;
-  margin: 20px;
+  margin: 60px;
   margin-top: 1rem;
   padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-bottom: 25px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 0 20px rgb(71, 135, 254) ;
   
 }
 
