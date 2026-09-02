@@ -47,7 +47,7 @@ nav {
 }
 
 .kiri {
-  width: fit-content;
+  width: 100%;
   background-color: rgb(17, 73, 177);
   border-radius: 20px;
   padding: 20px;
@@ -61,11 +61,10 @@ nav {
   display: flex;
   justify-content: end;
   background-color: rgb(17, 73, 177);
-  margin-left: 25px;
   padding: 40px;
   border-radius: 0 4rem;
   transition: all 0.3s;
-   box-shadow: 0 8px 13px black;
+  box-shadow: 0 8px 13px black;
 }
 
 .kanan:hover{
@@ -215,67 +214,6 @@ transform: scale(1.03) translateY(-8px)
   justify-content: center
 }
 
-/* style di tampilan device lain */
-@media screen and (max-width: 973px) {
-  nav {
-    flex-direction: column;
-    padding: 1.5rem;
-  }
-
-  .menu a {
-    margin: 0;
-    font-size: small;
-  }
-
-  .logo h1 {
-    margin-top: 0;
-  }
-
-  #hero {
-    flex-direction: column-reverse;
-    padding: 2rem;
-  }
-
-  .kiri, .kanan {
-    width: 100%;
-    justify-content: center;
-  }
-  .kanan {
-  justify-content:center ;
-
-  }
-
-  .kiri {
-    text-align: center;
-  }
-
-  .button {
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 10rem;
-  }
-
-  .button a {
-    margin-right: 0;
-  }
-
-  #skill {
-    padding: 2rem;
-  }
-  
-  .card {
-    flex-direction: column;
-  }
-
-  .item {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .item img {
-    width: 50px;
-  }
-}
 /* kontak/footer */
 #kontak {
 
@@ -284,15 +222,16 @@ transform: scale(1.03) translateY(-8px)
 
 .judul-kontak {
   background-color: rgb(17, 73, 177);
-  width:fit-content;
+  width:80%;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 400px;
-  padding-right: 400px;
+  /* padding-left: 400px;
+  padding-right: 400px; */
   border-radius: 999px;
   margin-right: auto;
   margin-left: auto;
   box-shadow: 0 5px 13px rgba(0, 0, 0, 0.728);
+  text-align: center;
 }
 
 .bungkus-konten {
@@ -401,6 +340,85 @@ button:hover {
   transform: scale(1.05);
   background-color: rgb(71, 135, 254);
   box-shadow: 0 0px 13px rgb(71, 135, 254);
+}
+
+/* style di tampilan device lain */
+@media screen and (max-width: 973px) {
+  nav {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .menu a {
+    margin: 0;
+    font-size: small;
+  }
+
+  .logo h1 {
+    margin-top: 0;
+  }
+
+  #hero {
+    flex-direction: column-reverse;
+    padding: 2rem;
+    margin: 0;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .kiri, .kanan {
+    width: 100%;
+  }
+
+  .kanan {
+    margin-left: 0;
+    width: fit-content;
+    padding:30px;
+  }
+
+  .kanan img {
+    width: 240px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .kiri {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .button {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 10rem;
+  }
+
+  .button a {
+    margin-right: 0;
+  }
+
+  #skill {
+    padding: 2rem;
+  }
+  
+  .card {
+    flex-direction: column;
+  }
+
+  .item {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .item img {
+    width: 50px;
+  }
+
+  .box-kontak {
+   padding: 10px;
+  }
 }
 
 
